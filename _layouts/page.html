@@ -2,8 +2,20 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+{% include page-hero.html %}
 
-{% include page-intro.html %}
+<div class='o-wrapper'>
 
-{{ content }}
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--center o-grid__col--3-4-m o-grid__col--2-3-l'>
+      <article class='c-post page'>
+
+        <div class='c-content'>
+          {{ content }}
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+</div>

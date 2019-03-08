@@ -5,5 +5,6 @@ author: john_doe
 date: '2019-03-04 12:03:45'
 intro_paragraph: 'This is the lede, that talks about the volatile market.'
 categories: healthcare
+image: '/assets/img/uploads/5.jpg'
 ---
 This is the body that covers the whole topic.

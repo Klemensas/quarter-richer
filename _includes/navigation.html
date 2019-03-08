@@ -1,11 +1,13 @@
-{% assign navurl = page.url | remove: 'index.html' %}
-<ul>
-{% for item in include.navigation %}
-  <li>
-    <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
-    {% if item.subitems %}
-      {% include navigation.html navigation=item.subitems %}
+<li class='c-nav__item'>
+  <a href='{{ site.baseurl }}/' class='c-nav__link'>Home</a>
+</li>
+
+{% for page in site.pages %}
+  {% unless page.name == '404.md' %}
+    {% if page.title %}
+      <li class='c-nav__item'>
+        <a href='{{ page.url | prepend: site.baseurl }}' class='c-nav__link'>{{ page.title }}</a>
+      </li>
     {% endif %}
-  </li>
+  {% endunless %}
 {% endfor %}
-</ul>

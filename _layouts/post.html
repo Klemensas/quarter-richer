@@ -1,34 +1,38 @@
 ---
 layout: default
 ---
-{% assign author = site.data.authors[page.author] %}
 
-<h2>{{ page.title }}</h2>
+{% include base_path %}
 
-<time datetime="{{ page.date }}">
-  <small>
-    <strong>{{ page.date | date_to_string }}</strong>
-    {% if author %}
-      by {{ author.name }}
-    {% endif %}
-  </small>
-</time>
+{% if page.image %}
+  <meta itemprop='og:image' content='{{ base_path }}{{ page.image }}'>
+{% endif %}
 
-{% include page-intro.html %}
+{% include post-hero.html %}
 
-{{ content }}
+<div class='o-wrapper'>
 
-<nav aria-label="Adjacent Posts">
-  <ul>
-    {% if page.previous.url %}
-      <li>
-        <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
-      </li>
-    {% endif %}
-    {% if page.next.url %}
-      <li>
-        <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
-      </li>
-    {% endif %}
-  </ul>
-</nav>
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--center o-grid__col--2-3-m'>
+      <article class='c-post'>
+
+        <div class='c-content'>
+          {{ content }}
+        </div>
+
+        <div class='o-grid'>
+          <div class='o-grid__col o-grid__col--4-4-s'>
+              {% include share.html %}
+          </div>
+        </div>
+
+        <hr>
+
+        {% include disqus.html %}
+
+      </article>
+
+    </div>
+  </div>
+
+</div>
