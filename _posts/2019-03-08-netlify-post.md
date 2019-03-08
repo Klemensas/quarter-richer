@@ -2,7 +2,7 @@
 layout: post
 title: Netlify post
 author: dan_urbanowicz
-date: '2019-03-08 18:03:12'
+date: '2019-03-08 08:03:12'
 image: /assets/img/uploads/26.jpg
 intro_paragraph: Intro paragraph to fluff this post!!
 categories: ''
