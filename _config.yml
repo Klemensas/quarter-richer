@@ -85,7 +85,6 @@ exclude:
   - README.md
   - LICENSE.txt
   - netlify.toml
-  - feed.xml
   - Gemfile
   - Gemfile.lock
   - node_modules
