@@ -3,11 +3,12 @@
 // *----------------------------------*/
 
 // Colors
-$color-brand: #000000;
+$color-brand: #1F3C88;
 $color-white: #FFFFFF;
 $color-black: #000000;
 $color-text:  #222222;
 $color-gray:  #5D738D;
+$color-link:  #070D59;
 
 // Background Colors
 $bg-gray:         #F6F9FC;
@@ -16,7 +17,4 @@ $bg-white:        $color-white;
 $bg-dark-opacity: rgba($color-black, .1);
 
 // Border
-$color-border: #EBF1F8;
-
-// Links
-$color-link: $color-text;
+$color-border: #DEE1EC;

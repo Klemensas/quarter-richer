@@ -8,6 +8,7 @@
   margin-bottom: double($base-spacing-unit);
 
   &__title {
+    color: $color-brand;
     margin-bottom: 0;
     font-size: $font-size-h2;
   }

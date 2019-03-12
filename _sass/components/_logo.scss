@@ -28,5 +28,9 @@
 
   &__img {
     max-height: quadruple($base-spacing-unit);
+
+    path {
+      fill: $color-brand;
+    }
   }
 }
