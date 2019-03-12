@@ -25,7 +25,7 @@ url: "https://jekyll-netlify-boilerplate.netlify.com" # the base hostname & prot
 permalink: pretty
 paginate:  12
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll/tagging
 
@@ -72,6 +72,11 @@ kramdown:
 #include:
 #  - _redirects
 #  - _headers
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
 
 # Exclude from processing.
 # The following items will not be processed.
