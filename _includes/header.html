@@ -5,7 +5,7 @@
       <div class='c-logo'>
         {% if site.logo %}
           <a href='{{ site.baseurl }}/'>
-            <img class='c-logo__img' src='{{ site.logo }}' alt='{{ site.title }}'>
+            {% svg '{{ site.logo }}' class="c-logo__img" %}
           </a>
         {% else %}
           <h1><a class='c-logo__link' href='{{ site.baseurl }}/'>{{ site.title }}</a></h1>

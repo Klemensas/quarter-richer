@@ -28,6 +28,7 @@ paginate:  12
 plugins:
   - jekyll-paginate
   - jekyll/tagging
+  - jekyll-inline-svg
 
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)
