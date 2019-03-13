@@ -32,6 +32,11 @@ layout: compress
     <script src="{{ '/js/transition.js' | prepend: site.baseurl }}">                 </script>
     <script src="{{ '/js/zoom.min.js' | prepend: site.baseurl }}">                   </script>
     <script src="{{ '/js/app.js' | prepend: site.baseurl }}">                        </script>
+
+    {% if page.collection == "posts" %}
+      <script src="{{ '/js/bootstrap.min.js' | prepend: site.baseurl }}">                </script>
+      <script src="{{ '/js/modal.js' | prepend: site.baseurl }}">                        </script>
+    {% endif %}
   </body>
 
 </html>

@@ -47,7 +47,7 @@ collections: # A list of collections the CMS should be able to edit
     # MODALS
   - name: "modal"
     label: "Modal"
-    folder: "modals"
+    folder: "_modals"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:

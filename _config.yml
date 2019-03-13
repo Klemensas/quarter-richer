@@ -49,6 +49,9 @@ sass:
 compress_html:
   clippings: all
 
+collections:
+  - modals
+
 # set some common post defaults
 defaults:
   -

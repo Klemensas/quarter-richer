@@ -1,0 +1,10 @@
+<script>
+  var modalArray = {{ site.modals | jsonify }};
+  var modalData = modalArray.reduce(function(result, item) {
+    result[item.slug] = {
+      referral: item.referral,
+      questions: item.questions,
+    };
+    return result;
+  }, {});
+</script>
