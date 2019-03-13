@@ -2,14 +2,9 @@
 title: Test modal
 referral: 'https://google.com'
 questions:
-  - options:
-      - anwer
-      - long answer of multiple words
-      - 'no'
+  - response: text
     question: Real question?
-  - options:
-      - 'no'
-      - noooo
+  - response: text
     question: Yes?
 ---
 

@@ -44,3 +44,28 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
+    # MODALS
+  - name: "modal"
+    label: "Modal"
+    folder: "modals"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Referral Url", name: "referral", widget: "string"}
+      - label: "Questions"
+        name: "questions"
+        widget: "list"
+        fields:
+          - {label: "Question", name: question, widget: string }
+          - label: "Response type"
+            name: "response"
+            widget: "select"
+            default: "text"
+            options: 
+              - { label: "Text", value: "text" }
+              - { label: "Textarea", value: "textarea" }
+              - { label: "Checkbox", value: "checkbox" }
+              - { label: "Radio", value: "radio" }
+          - {label: "Options", name: options, widget: list, required: false }
+
