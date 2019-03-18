@@ -210,3 +210,27 @@ $modal-transition:                  transform .3s ease-out !default;
 @include media-breakpoint-up(lg) {
   .modal-lg { max-width: $modal-lg; }
 }
+
+// Custom
+.modal-content {
+  overflow: hidden;  
+
+  .modal-content-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+
+    .modal-page {
+      flex: 1 0 100%;
+    }
+  }
+
+  .step-position {
+    height: 15px;
+    width: 100%;
+
+    .current-step {
+      height: 100%;
+      background-color: red;
+    }
+  }
+}
